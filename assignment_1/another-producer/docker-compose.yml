@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  another:
+    container_name: another
+    build: .
+    environment:
+      KAFKA_BROKER_URL: broker:9092
+      TOPIC_NAME: another
+      SLEEP_TIME: 5
+
+networks:
+  default:
+    external:
+      name: kafka-network
