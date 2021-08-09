@@ -1,0 +1,7 @@
+pymongo
+numpy
+bs4
+tqdm
+jupyterlab
+dnspython
+spacy_dbpedia_spotlight

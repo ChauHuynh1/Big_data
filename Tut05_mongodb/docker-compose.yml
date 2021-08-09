@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+  test:
+    container_name: test
+    hostname: test
+    build:
+      context: .
+    ports:
+        - 8888:8888
+    volumes:
+      - $PWD/TUT05_MONGODB/python:/usr/app
